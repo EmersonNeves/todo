@@ -1,0 +1,188 @@
+.cover {
+  width: 100%;
+  height: 200px;
+  background: var(--gray-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 900;
+  background: linear-gradient(to right, var(--blue-200), var(--purple-400));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.icon {
+  color: var(--blue-200);
+  position: relative;
+  top: 0.5rem;
+  right: 0.3rem;
+}
+
+.wrapper {
+  width: 736px;
+  margin: 0 auto;
+}
+
+.createTask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: calc(0px - 1rem - 6px);
+}
+
+.createTask input {
+  background: var(--gray-500);
+  width: 90%;
+  height: 50px;
+  border: 1px solid var(--gray-500);
+  border-radius: 5px;
+  padding: 0.5rem;
+  color: var(--gray-300);
+}
+.createTask input:focus {
+  outline: 1px solid var(--gray-500);
+}
+.createTask button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 50px;
+  margin-left: 0.3rem;
+  border-radius: 5px;
+  background: var(--blue-300);
+  border: 1px solid var(--blue-300);
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.buttonIcon {
+  margin-top: 2px;
+  margin-left: 3px;
+}
+
+.tasks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px 0 30px 0;
+}
+
+.countTasks {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.countTasks p {
+  color: var(--blue-200);
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.countTasks span {
+  color: var(--blue-200);
+  background: var(--gray-700);
+  border-radius: 10%;
+  width: 20px;
+  text-align: center;
+  margin-left: 8px;
+}
+
+.countTasks .span {
+  color: var(--blue-200);
+  background: var(--gray-700);
+  border-radius: 5%;
+  width: 70px;
+  height: 20px;
+  text-align: center;
+  margin-left: 8px;
+}
+
+.tasksContent {
+  border-top: 2px solid var(--gray-500);
+  border-radius: 5px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+.tasksIcon {
+  color: var(--gray-450);
+}
+
+.hasContent {
+  margin-top: 2rem;
+  background: var(--gray-500);
+  padding: 1rem;
+  margin-bottom: -1rem;
+  border-radius: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hasContent .toDo {
+  margin-right: 1rem;
+  border: 2px solid var(--blue-200);
+  height: 20px;
+  width: 20px;
+  background: var(--gray-500);
+  content: url("./assets/no-check.svg");
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.hasContent .done {
+  margin-right: 1rem;
+  border: 2px solid var(--blue-300);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  content: url("./assets/check.svg");
+  background: var(--blue-300);
+
+  cursor: pointer;
+}
+
+.hasContent .deleteButton {
+  cursor: pointer;
+}
+
+.hasContent .deleteButton:hover {
+  color: var(--gray-700)
+}
+
+.hasNoContent {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--gray-400);
+  margin-top: 100px;
+}
+
+.hasNoContent p {
+  font-weight: bold;
+}
+
+.hasNoContent span {
+  font-size: 0.875rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem;
+}
