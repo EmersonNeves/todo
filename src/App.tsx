@@ -101,7 +101,7 @@ function App() {
           </div>
         </div>
         <div className={styles.tasksContent}>
-          {tasks ? (
+          {tasks.length > 0 ? (
             tasks.map((task) => {
               return (
                 <div key={task.id} className={styles.hasContent}>
